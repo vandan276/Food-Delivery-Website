@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image:url(pics/1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+nav{
+    display: flex;
+    padding: 2% 2.5%;
+    align-items: center;
+}
+nav img{
+    width: 200px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width: 0%;
+    height: 2px;
+    background: rgb(170, 6, 126);
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box{
+    text-shadow: 0 0 10px #750b75ef;
+    width: 95%;
+    color:#fff;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 70px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 20px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border:1px solid #fff;
+    padding: 12px 34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #fff;
+    background: #c847d3;
+    transition: 1s;
+    box-shadow:0 0 30px 1px rgba(255, 1, 234, 0.952);
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 62px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: none;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+.border{
+    align-items: center;
+    font-size: large;
+}
+/*---------our works-----------*/
+
+.works{
+    text-shadow: 0 0 1.8px #4b094b8a;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color:  #ffffff;
+    background-image:url(bg.png);
+}
+.works h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.works p{
+
+    color:rgb(77, 74, 74);
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    text-shadow: 0 0 1.8px #4b094b8a;
+    margin-top: 3.5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.row p{
+    text-shadow: 0 0 50px #4b094b8a;
+    font-size: 13px;
+}
+.works-col{
+    flex-basis: 31%;
+    background: #f8f2f2;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.row h3{
+    font-weight: 600;
+}
+.works-col:hover{
+    box-shadow: 0 0 35px 0px rgba(255, 1, 234, 0.952);
+    transition: 0.4s;
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.row2{
+    text-shadow: 0 0 1px #4b094b8a;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.row2 p{
+    font-size: 13px;
+}
+.row2 h3{
+    font-weight: 600;
+}
+@media(max-width: 700px){
+    .row2{
+        flex-direction: column;
+    }
+}
+.search input[type=text]{
+    align-items: center;
+    margin-top: 2%;
+    width:600px;
+    height:55px;
+    border-radius:25px;
+    border-color: #c847d3;
+    background: #f8f2f2;
+    border-radius: 10px;
+    margin-bottom: 0%;
+    margin-top: 1.5%;
+    box-sizing: border-box;
+    transition: 0.5s;
+    background: #fff;
+}
+.search input:hover{
+    box-shadow:0 0 30px 5px rgba(255, 1, 234, 0.952);
+    transition: 0.4s;
+}    

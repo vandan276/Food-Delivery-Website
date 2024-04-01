@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>
+            MEAL DASH
+        </title> 
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap" rel="stylesheet">
+    </head>
+<body>
+<section class="header">
+            <Nav>
+                <a href="home.html"><img src="pics/logo.png"></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hidemenu()"></i>
+                    <ul>
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT US</a></li>
+                        <li><a href="">OUR SERVICES</a></li>
+                        <li><a href="">CONTACT US</a></li>  
+                    </ul>
+                </div>
+                <i class="fa fa-ellipsis-v" onclick="showmenu()"></i>
+            </Nav>
+<div class="text-box">
+    <h1></h1>
+    <p>Under the demographic segmentation stratege , Meal Dash targets the age 18-35.
+         People who want to dine out and want to research the restaurants they wish to visit. Meal Dash has found 
+        a larger target segment in the working professionals who want to dine out and also want to get food delivered at their doorstep.
+    </p>
+    <a href="" class="hero-btn">Order Now</a>
+</div>
+</section>
+<!-----------------Our works---------------->
+<section class="works">
+    <h1>Find something for your Tummy!
+    </h1>
+    <div class="search">
+        <form action="#" >
+            <input type="text"
+                placeholder=" Search Dishes!"
+                name="search">
+        </form>
+    </div>
+    <a href=""></a>
+    <div class="row">
+        
+        <div class="works-col"> 
+        <h3>
+            Italian
+        </h3>
+        <img src="pics/pic.jpg" width="300px">
+        </div>
+    <div class="works-col">
+        <h3>
+            Mexican
+        </h3>
+        <img src="pics/pic2.jpg" width="300px"> 
+    </div>
+    <div class="works-col">
+        <h3>
+           Indian
+        </h3>
+        <img src="pics/pic4.png" width="300px">
+    </div>
+</div>
+<div class="row2">
+<div class="works-col">
+    <h3>
+        Juice & Smoothies
+    </h3>
+    <img src="pics/pic5.jpg" width="300px">
+</div>
+<div class="works-col">
+    <h3>
+        Fast Food
+    </h3>
+    <img src="pics/pic6.jpg" width="300px">
+</div>
+<div class="works-col">
+    <h3>
+        Deserts
+    </h3>
+    <img src="pics/pic3.jpg" width="300px">  
+</div>
+</div>
+</a>
+</section>
+
+<!---------Javascript for toggle menu----------->
+<script>
+    var navlinks = document.getElementById("navlinks");
+
+    function showmenu(){
+        navlinks.style.right="0";
+    }
+    function hidemenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>
